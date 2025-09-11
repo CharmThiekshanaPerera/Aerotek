@@ -1,0 +1,35 @@
+[13-Mar-2025 03:04:08 America/Chicago] PHP Warning:  require(/home2/ucfwrite/public_html/website_581aa544/../vendor/autoload.php): Failed to open stream: No such file or directory in /home2/ucfwrite/public_html/website_581aa544/index.php on line 34
+[13-Mar-2025 03:04:08 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/ucfwrite/public_html/website_581aa544/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home2/ucfwrite/public_html/website_581aa544/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home2/ucfwrite/public_html/website_581aa544/index.php on line 34
+[13-Mar-2025 03:04:10 America/Chicago] PHP Warning:  require(/home2/ucfwrite/public_html/website_581aa544/../vendor/autoload.php): Failed to open stream: No such file or directory in /home2/ucfwrite/public_html/website_581aa544/index.php on line 34
+[13-Mar-2025 03:04:10 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/ucfwrite/public_html/website_581aa544/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home2/ucfwrite/public_html/website_581aa544/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home2/ucfwrite/public_html/website_581aa544/index.php on line 34
+[13-Mar-2025 03:07:27 America/Chicago] PHP Warning:  require(/home2/ucfwrite/public_html/website_581aa544/../vendor/autoload.php): Failed to open stream: No such file or directory in /home2/ucfwrite/public_html/website_581aa544/index.php on line 34
+[13-Mar-2025 03:07:27 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/ucfwrite/public_html/website_581aa544/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home2/ucfwrite/public_html/website_581aa544/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home2/ucfwrite/public_html/website_581aa544/index.php on line 34
+[13-Mar-2025 03:07:29 America/Chicago] PHP Warning:  require(/home2/ucfwrite/public_html/website_581aa544/../vendor/autoload.php): Failed to open stream: No such file or directory in /home2/ucfwrite/public_html/website_581aa544/index.php on line 34
+[13-Mar-2025 03:07:29 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/ucfwrite/public_html/website_581aa544/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home2/ucfwrite/public_html/website_581aa544/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home2/ucfwrite/public_html/website_581aa544/index.php on line 34
+[13-Mar-2025 03:07:36 America/Chicago] PHP Warning:  require(/home2/ucfwrite/public_html/website_581aa544/../vendor/autoload.php): Failed to open stream: No such file or directory in /home2/ucfwrite/public_html/website_581aa544/index.php on line 34
+[13-Mar-2025 03:07:36 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/ucfwrite/public_html/website_581aa544/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home2/ucfwrite/public_html/website_581aa544/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home2/ucfwrite/public_html/website_581aa544/index.php on line 34
+[13-Mar-2025 03:10:28 America/Chicago] PHP Warning:  require(/home2/ucfwrite/public_html/website_581aa544/website_581aa544/vendor/autoload.php): Failed to open stream: No such file or directory in /home2/ucfwrite/public_html/website_581aa544/index.php on line 34
+[13-Mar-2025 03:10:28 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/ucfwrite/public_html/website_581aa544/website_581aa544/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home2/ucfwrite/public_html/website_581aa544/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home2/ucfwrite/public_html/website_581aa544/index.php on line 34
+[13-Mar-2025 03:10:30 America/Chicago] PHP Warning:  require(/home2/ucfwrite/public_html/website_581aa544/website_581aa544/vendor/autoload.php): Failed to open stream: No such file or directory in /home2/ucfwrite/public_html/website_581aa544/index.php on line 34
+[13-Mar-2025 03:10:30 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/ucfwrite/public_html/website_581aa544/website_581aa544/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home2/ucfwrite/public_html/website_581aa544/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home2/ucfwrite/public_html/website_581aa544/index.php on line 34

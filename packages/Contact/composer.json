@@ -1,0 +1,27 @@
+{
+    "name": "phyxle/contact",
+    "description": "A low-level contact package for Laravel by Phyxle Infotech (Pvt) Ltd",
+    "type": "library",
+    "license": "private",
+    "autoload": {
+        "psr-4": {
+            "Phyxle\\Contact\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Phyxle Infotech (Pvt) Ltd",
+            "email": "info@phyxle.com"
+        },
+        {
+            "name": "Pathum Bandara",
+            "email": "pathumbandarame@gmail.com"
+        },
+        {
+            "name": "Enindu Alahapperuma",
+            "email": "enindu@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
