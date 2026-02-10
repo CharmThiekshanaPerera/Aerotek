@@ -93,7 +93,7 @@ return [
 
     'from' => [
         'address' => env('MAIL_FROM_ADDRESS', 'noreply@test.com'),
-        'name' => env('MAIL_FROM_NAME', 'Laravel Starter Kit'),
+        'name' => env('MAIL_FROM_NAME', 'Aerotek'),
     ],
 
     /*

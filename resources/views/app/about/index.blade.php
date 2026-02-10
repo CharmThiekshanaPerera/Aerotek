@@ -5,7 +5,7 @@
 @endsection
 
 @section('seo_title', 'About Aerotek Lanka')
-@section('seo_description', 'Learn about Aerotek Lanka (Pvt) Ltd, a Sri Lankan mechanical ventilation company providing HVAC, evaporative cooling, and air conditioning solutions.')
+@section('seo_description', 'Learn about Aerotek Lanka, a Sri Lankan mechanical ventilation company providing HVAC, evaporative cooling, and air conditioning solutions.')
 @section('seo_keywords', 'about Aerotek Lanka, mechanical ventilation company, HVAC Sri Lanka, ventilation experts')
 @section('seo_image', asset('images/about.png'))
 @section('seo_schema')
@@ -59,10 +59,10 @@
                         <div class="res-991-pr-0 pr-40">
                             <div class="section-title with-desc">
                                 <div class="title-header">
-                                    <h2 class="title">Aerotek Lanka (Pvt) Ltd</h2>
+                                    <h2 class="title">Aerotek Lanka</h2>
                                 </div>
                                 <div class="title-desc">
-                                    <p>AEROTEK LANKA (PVT) LTD provides high technology Ventilation Systems for your ventilation requirements. We can bring in a very comfortable atmosphere using our great experience in handling air that you require, efficiently and cost effectively. We can provide solutions for your requirements.</p>
+                                    <p>Aerotek Lanka provides high technology Ventilation Systems for your ventilation requirements. We can bring in a very comfortable atmosphere using our great experience in handling air that you require, efficiently and cost effectively. We can provide solutions for your requirements.</p>
                                 </div>
                                 <ul class="about-subpoints">
                                     <li>Fresh Air Inflow Systems</li>
@@ -83,11 +83,11 @@
                                 </ul>
                                 <div class="content-tab">
                                     <div class="content-inner active">
-                                        <p><img alt="Aerotek vision" class="alignleft" height="150" src="{{ asset('images/vision.jpg') }}" width="150"></p>
+                                        <p><img alt="Aerotek Lanka vision" class="alignleft" height="150" src="{{ asset('images/vision.jpg') }}" width="150"></p>
                                         <p>To be a world class acclaimed Mechanical Ventilation Solutions Company, giving Total Engineering Solutions to the entire Satisfaction of the Customers.</p>
                                     </div>
                                     <div class="content-inner">
-                                        <p><img alt="Aerotek mission" class="alignleft" height="150" src="{{ asset('images/mission.jpg') }}" width="150">To provide superb customer service and to offer the highest Mechanical Ventilation options available.</p>
+                                        <p><img alt="Aerotek Lanka mission" class="alignleft" height="150" src="{{ asset('images/mission.jpg') }}" width="150">To provide superb customer service and to offer the highest Mechanical Ventilation options available.</p>
                                         <p>To keep up with advances in Mechanical Ventilation technology to continually expand our base of knowledge and expertise.</p>
                                         <p>To always remain aware of our responsibility to our environment and educate our customers and staff on eco-friendly options.</p>
                                     </div>
@@ -109,7 +109,7 @@
                     </div>
                     <div class="col-lg-5">
                         <div class="d-inline-block cmt_single_image-wrapper position-relative">
-                            <img alt="Aerotek ventilation experts" class="img-fluid" height="574" src="{{ asset('images/about.png') }}" width="514">
+                            <img alt="Aerotek Lanka ventilation experts" class="img-fluid" height="574" src="{{ asset('images/about.png') }}" width="514">
                             <div class="d-flex mt_140 ml-90 res-991-m-0 res-991-mt-30 position-relative z-index-2">
                                 <div class="cmt-bgcolor-highlight pl-5"></div>
                                 <div class="d-inline w-100 pt-25 pb-15 cmt-bgcolor-white box-shadow pl-20 pr-20 text-left">
@@ -141,7 +141,7 @@
                         <div class="d-flex">
                             <div class="col">
                                 <div class="cmt_single_image-wrapper about-story-img">
-                                    <img alt="Aerotek story and facilities" class="img-fluid" height="610" src="{{ asset('images/about-2.jpg') }}" width="571">
+                                    <img alt="Aerotek Lanka story and facilities" class="img-fluid" height="610" src="{{ asset('images/about-2.jpg') }}" width="571">
                                 </div>
                             </div>
                         </div>
@@ -153,10 +153,10 @@
                                     <h2 class="title">Our Story</h2>
                                 </div>
                                 <div class="title-desc">
-                                    <p>AEROTEK LANKA (PVT) LTD is a Professional Mechanical Ventilation Company in Sri Lanka Specialized in Cater to Domestic, Commercial and Industrial Mechanical Ventilation Requirements of the HVAC Sector.</p>
-                                    <p>AEROTEK LANKA (PVT) LTD was established in 2016 and registered office is located in Gampaha district, Urapola and the Design office is located in Nittambuwa city.</p>
-                                    <p>AEROTEK LANKA (PVT) LTD has strong technology strength, which has created a good platform for the company's technological innovation, related product research and development.</p>
-                                    <p>At present AEROTEK LANKA (PVT) LTD carryout very sustainable designing, fabrication and installation of Ventilation Systems, Evaporative Cooling Systems and Air Conditioning Systems.</p>
+                                    <p>Aerotek Lanka is a Professional Mechanical Ventilation Company in Sri Lanka Specialized in Cater to Domestic, Commercial and Industrial Mechanical Ventilation Requirements of the HVAC Sector.</p>
+                                    <p>Aerotek Lanka was established in 2016 and registered office is located in Gampaha district, Urapola and the Design office is located in Nittambuwa city.</p>
+                                    <p>Aerotek Lanka has strong technology strength, which has created a good platform for the company's technological innovation, related product research and development.</p>
+                                    <p>At present Aerotek Lanka carryout very sustainable designing, fabrication and installation of Ventilation Systems, Evaporative Cooling Systems and Air Conditioning Systems.</p>
                                     <p>Our solutions are widely used in production industries, factories, garments, hotels, hospitals, laboratories, pharmaceuticals, workshops, painting booths, high rise buildings, warehouses, poultry houses, greenhouses and residential requirements.</p>
                                     <p>We are very much perceived for our responsiveness, workmanship, and nature of work and most clients are happy with our administrations.</p>
                                 </div>

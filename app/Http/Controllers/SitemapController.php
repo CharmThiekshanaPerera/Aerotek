@@ -42,7 +42,19 @@ class SitemapController extends Controller
 
         $xml = $this->buildXml($urls);
 
-        return response($xml, 200)->header('Content-Type', 'application/xml');
+        $lastModified = collect([
+            ProductCategory::query()->max('updated_at'),
+            ProjectCategory::query()->max('updated_at'),
+        ])->filter()->map(function ($value) {
+            return \Illuminate\Support\Carbon::parse($value);
+        })->max() ?? now();
+
+        $response = response($xml, 200)->header('Content-Type', 'application/xml');
+        $response->headers->set('Cache-Control', 'public, max-age=3600');
+        $response->setEtag('"' . sha1($xml) . '"');
+        $response->setLastModified($lastModified);
+
+        return $response;
     }
 
     private function buildXml(array $urls): string

@@ -128,7 +128,7 @@ return [
 
     'cookie' => env(
         'SESSION_COOKIE',
-        Str::slug(env('APP_NAME', 'Laravel Starter Kit'), '_').'_session'
+        Str::slug(env('APP_NAME', 'Aerotek'), '_').'_session'
     ),
 
     /*

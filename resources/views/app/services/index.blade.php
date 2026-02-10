@@ -28,8 +28,47 @@
                 ],
             ],
         ];
+        $serviceSchema = [
+            '@context' => 'https://schema.org',
+            '@type' => 'ItemList',
+            'itemListElement' => [
+                [
+                    '@type' => 'ListItem',
+                    'position' => 1,
+                    'item' => [
+                        '@type' => 'Service',
+                        'name' => 'Mechanical Ventilation Systems',
+                    ],
+                ],
+                [
+                    '@type' => 'ListItem',
+                    'position' => 2,
+                    'item' => [
+                        '@type' => 'Service',
+                        'name' => 'Evaporative Cooling Systems',
+                    ],
+                ],
+                [
+                    '@type' => 'ListItem',
+                    'position' => 3,
+                    'item' => [
+                        '@type' => 'Service',
+                        'name' => 'Humidifier & Dehumidifier Systems',
+                    ],
+                ],
+                [
+                    '@type' => 'ListItem',
+                    'position' => 4,
+                    'item' => [
+                        '@type' => 'Service',
+                        'name' => 'Air Conditioning Systems',
+                    ],
+                ],
+            ],
+        ];
     @endphp
     <script type="application/ld+json">{{ json_encode($breadcrumbSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) }}</script>
+    <script type="application/ld+json">{{ json_encode($serviceSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) }}</script>
 @endsection
 
 @section('content')

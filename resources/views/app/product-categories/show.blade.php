@@ -34,8 +34,25 @@
                 ],
             ],
         ];
+        $productItems = $productCategory->products->values()->map(function ($product, $index) {
+            return [
+                '@type' => 'ListItem',
+                'position' => $index + 1,
+                'item' => [
+                    '@type' => 'Product',
+                    'name' => $product->title,
+                    'image' => asset('images/products/' . $product->image),
+                ],
+            ];
+        })->all();
+        $productSchema = [
+            '@context' => 'https://schema.org',
+            '@type' => 'ItemList',
+            'itemListElement' => $productItems,
+        ];
     @endphp
     <script type="application/ld+json">{{ json_encode($breadcrumbSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) }}</script>
+    <script type="application/ld+json">{{ json_encode($productSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) }}</script>
 @endsection
 
 @section('content')

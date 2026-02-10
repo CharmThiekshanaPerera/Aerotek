@@ -4,7 +4,7 @@ A low-level contact package for Laravel by Phyxle Infotech (Pvt) Ltd.
 
 ## INSTALL
 
-> This package will only works properly on the `Laravel Starter Kit` by Phyxle Infotech (Pvt) Ltd. Therefore, you need to install it at first. Click [this link](https://gitlab.com/phyxle/laravel-starter-kit/-/archive/master/laravel-starter-kit-master.zip) to download the `Laravel Starter Kit` or clone it directly from the company repository.
+> This package will only works properly on the `Aerotek` by Phyxle Infotech (Pvt) Ltd. Therefore, you need to install it at first. Click [this link](https://gitlab.com/phyxle/laravel-starter-kit/-/archive/master/laravel-starter-kit-master.zip) to download the `Aerotek` or clone it directly from the company repository.
 
 **NOTE: Before installing this package, you need to configure your mail server properly.**
 

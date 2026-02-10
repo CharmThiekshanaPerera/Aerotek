@@ -10,7 +10,7 @@
         $fullTitle = $pageTitle !== '' ? $pageTitle . ' | ' . $siteName : $siteName;
         $seoDescription = trim($__env->yieldContent('seo_description'));
         if ($seoDescription === '') {
-            $seoDescription = 'Aerotek Lanka (Pvt) Ltd provides mechanical ventilation, HVAC, evaporative cooling, and air conditioning solutions for industrial, commercial, and domestic projects in Sri Lanka.';
+            $seoDescription = 'Aerotek Lanka provides mechanical ventilation, HVAC, evaporative cooling, and air conditioning solutions for industrial, commercial, and domestic projects in Sri Lanka.';
         }
         $seoKeywords = trim($__env->yieldContent('seo_keywords'));
         if ($seoKeywords === '') {

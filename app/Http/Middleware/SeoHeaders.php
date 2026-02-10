@@ -22,6 +22,17 @@ class SeoHeaders
             $response->headers->set('X-Robots-Tag', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
             $response->headers->set('Referrer-Policy', 'strict-origin-when-cross-origin');
             $response->headers->set('X-Content-Type-Options', 'nosniff');
+            $response->headers->set('Cache-Control', 'public, max-age=300');
+            $response->headers->set('Vary', 'Accept-Encoding');
+
+            $content = $response->getContent();
+            if ($content !== false && $content !== null) {
+                $etag = '"' . sha1($content) . '"';
+                $response->setEtag($etag);
+            }
+            if (!$response->headers->has('Last-Modified')) {
+                $response->setLastModified(now());
+            }
         }
 
         return $response;

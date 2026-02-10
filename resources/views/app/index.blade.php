@@ -5,7 +5,7 @@
 @endsection
 
 @section('seo_title', 'Ventilation Systems in Sri Lanka')
-@section('seo_description', 'Aerotek Lanka (Pvt) Ltd provides mechanical ventilation, HVAC, evaporative cooling, and air conditioning solutions for industrial, commercial, and domestic projects in Sri Lanka.')
+@section('seo_description', 'Aerotek Lanka provides mechanical ventilation, HVAC, evaporative cooling, and air conditioning solutions for industrial, commercial, and domestic projects in Sri Lanka.')
 @section('seo_keywords', 'mechanical ventilation, ventilation systems, HVAC Sri Lanka, evaporative cooling, air conditioning, industrial ventilation')
 @section('seo_image', asset('images/slide-1.jpg'))
 @section('seo_schema')
@@ -25,7 +25,7 @@
         <rs-module data-version="6.3.3" id="rev_slider_2_1" style="">
             <rs-slides>
                 <rs-slide data-anim="ei:d;eo:d;s:1000;r:0;t:fade;sl:0;" data-key="rs-2" data-thumb="{{ asset('images/slide-1.jpg') }}" data-title="Slide">
-                    <img class="rev-slidebg" data-no-retina height="930" src="{{ asset('images/slide-1.jpg') }}" title="mainslider-img01" width="1920" alt="Aerotek ventilation systems hero">
+                    <img class="rev-slidebg" data-no-retina height="930" src="{{ asset('images/slide-1.jpg') }}" title="mainslider-img01" width="1920" alt="Aerotek Lanka ventilation systems hero">
                     <rs-layer data-color="#ffffff" data-frame_0="sX:0.9;sY:0.9;" data-frame_1="e:power2.inOut;st:110;sp:600;sR:110;" data-frame_999="o:0;st:w;sR:8290;" data-rsp_ch="on" data-text="w:normal;s:18,18,14,13;l:30,30,30,35;fw:500,500,600,600;" data-type="text" data-xy="x:c;xo:0,0,30px,0;yo:365px,207px,100px,99px;" id="slider-1-slide-2-slide-3-layer-0" style="z-index:8;font-family:Jost;text-transform: uppercase;">Ventilation Solutions Expert</rs-layer>
                     <rs-layer data-color="#ffffff" data-dim="w:270px,270px,210px,129px;h:2px,2px,1px,1px;" data-frame_0="sX:0.9;sY:0.9;" data-frame_1="st:110;sp:400;sR:110;" data-frame_999="o:0;st:w;sR:8490;" data-rsp_ch="on" data-text="w:normal;s:20,20,12,7;l:0,0,15,9;" data-type="shape" data-vbility="t,t,t,f" data-xy="x:c;xo:0,0,28px,327px;y:m;yo:-66px,-142px,-98px,-59px;" id="slider-1-slide-2-layer-1" style="z-index:9;font-family:Jost;background-color: #fccc00;"></rs-layer>
                     <rs-layer data-color="#ffffff" data-frame_0="y:100%;" data-frame_1="e:power4.inOut;st:270;sp:800;sR:270;" data-frame_999="o:0;st:w;sR:7930;" data-rsp_ch="on" data-text="w:normal;s:72,72,45,30;l:75,75,65,35;fw:600;" data-type="text" data-xy="x:c;xo:0,0,30px,0;yo:432px,283px,143px,140px;" id="slider-1-slide-2-layer-2" style="z-index:10;font-family:Jost;">
@@ -35,7 +35,7 @@
                     <a class="rs-layer cmt-btn cmt-btn-size-md cmt-btn-shape-square cmt-btn-style-fill cmt-btn-color-highlight" data-border="bor:5px,5px,5px,5px;" data-color="#ffffff" data-frame_0="y:100%;" data-frame_1="e:power4.inOut;st:720;sp:500;sR:720;" data-frame_999="o:0;st:w;sR:7780;" data-frame_hover="c:#fff;bgc:#fccc00;boc:#fccc00;bor:5px,5px,5px,5px;bos:solid;bow:1px,1px,1px,1px;" data-padding="t:15,15,15,12;r:43,43,35,30;b:15,15,15,12;l:43,43,35,30;" data-rsp_ch="on" data-text="w:normal;s:15,15,14,14;l:19,19,14,14;fw:500;" data-type="text" data-xy="x:c;xo:0,0,30px,0;y:m;yo:207px,150px,98px,45px;" href="{{ route('about.index') }}" id="slider-1-slide-2-layer-4" rel="nofollow" style="z-index:15;font-family:Jost;text-transform:capitalize;" target="_self">Read More</a>
                 </rs-slide>
                 <rs-slide data-anim="ei:d;eo:d;s:1000;r:0;t:fade;sl:0;" data-key="rs-4" data-thumb="{{ asset('images/slide-2.jpg') }}" data-title="Slide">
-                    <img class="rev-slidebg" data-no-retina height="930" src="{{ asset('images/slide-2.jpg') }}" title="mainslider-img02" width="1920" alt="Aerotek mechanical ventilation solutions">
+                    <img class="rev-slidebg" data-no-retina height="930" src="{{ asset('images/slide-2.jpg') }}" title="mainslider-img02" width="1920" alt="Aerotek Lanka mechanical ventilation solutions">
                     <rs-layer data-color="#ffffff" data-frame_0="sX:0.9;sY:0.9;" data-frame_1="e:power2.inOut;st:110;sp:600;sR:110;" data-frame_999="o:0;st:w;sR:8290;" data-rsp_ch="on" data-text="w:normal;s:18,18,14,13;l:30,30,30,35;fw:500,500,600,600;" data-type="text" data-xy="x:c;xo:0,0,30px,0;yo:365px,207px,100px,99px;" id="slider-3-slide-2-slide-1-layer-0" style="z-index:8;font-family:Jost;text-transform: uppercase;">Ventilation Solutions Expert</rs-layer>
                     <rs-layer data-color="#ffffff" data-dim="w:270px,270px,210px,129px;h:2px,2px,1px,1px;" data-frame_0="sX:0.9;sY:0.9;" data-frame_1="st:110;sp:400;sR:110;" data-frame_999="o:0;st:w;sR:8490;" data-rsp_ch="on" data-text="w:normal;s:20,20,12,7;l:0,0,15,9;" data-type="shape" data-vbility="t,t,t,f" data-xy="x:c;xo:0,0,28px,327px;y:m;yo:-66px,-142px,-98px,-59px;" id="slider-3-slider-2-slide-1-layer-1" style="z-index:9;font-family:Jost;background-color: #fccc00;"></rs-layer>
                     <rs-layer data-color="#ffffff" data-frame_0="y:100%;" data-frame_1="e:power4.inOut;st:270;sp:800;sR:270;" data-frame_999="o:0;st:w;sR:7930;" data-rsp_ch="on" data-text="w:normal;s:72,72,45,30;l:75,75,65,35;fw:600;" data-type="text" data-xy="x:c;xo:0,0,30px,0;yo:432px,283px,143px,140px;" id="slider-1-slider-2-slide-3-layer-2" style="z-index:10;font-family:Jost;">
@@ -53,7 +53,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="cmt_single_image-wrapper">
-                            <img alt="Aerotek team and ventilation systems" class="img-fluid" src="{{ asset('images/about.png') }}" height="490" width="465">
+                            <img alt="Aerotek Lanka team and ventilation systems" class="img-fluid" src="{{ asset('images/about.png') }}" height="490" width="465">
                         </div>
                         <div class="fid cmt-fid inside fid-highlight-box-1 cmt-bgcolor-highlight">
                             <div class="cmt-fid-contents">
