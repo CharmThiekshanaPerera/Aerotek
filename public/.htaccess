@@ -5,6 +5,9 @@
 
     RewriteEngine On
 
+    # Serve sitemap via Laravel to include dynamic URLs
+    RewriteRule ^sitemap\.xml$ index.php [L]
+
     # Handle authorization header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]

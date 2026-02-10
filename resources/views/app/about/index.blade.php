@@ -4,6 +4,11 @@
     About Us
 @endsection
 
+@section('seo_title', 'About Aerotek Lanka')
+@section('seo_description', 'Learn about Aerotek Lanka (Pvt) Ltd, a Sri Lankan mechanical ventilation company providing HVAC, evaporative cooling, and air conditioning solutions.')
+@section('seo_keywords', 'about Aerotek Lanka, mechanical ventilation company, HVAC Sri Lanka, ventilation experts')
+@section('seo_image', asset('images/about.png'))
+
 @section('content')
     <div class="cmt-page-title-row cmt-bgimage-yes cmt-bg cmt-bgcolor-darkgrey">
         <div class="cmt-row-wrapper-bg-layer cmt-bg-layer"></div>
@@ -55,11 +60,11 @@
                                 </ul>
                                 <div class="content-tab">
                                     <div class="content-inner active">
-                                        <p><img alt="vision" class="alignleft" height="150" src="{{ asset('images/vision.jpg') }}" width="150"></p>
+                                        <p><img alt="Aerotek vision" class="alignleft" height="150" src="{{ asset('images/vision.jpg') }}" width="150"></p>
                                         <p>To be a world class acclaimed Mechanical Ventilation Solutions Company, giving Total Engineering Solutions to the entire Satisfaction of the Customers.</p>
                                     </div>
                                     <div class="content-inner">
-                                        <p><img alt="misssion" class="alignleft" height="150" src="{{ asset('images/mission.jpg') }}" width="150">To provide superb customer service and to offer the highest Mechanical Ventilation options available.</p>
+                                        <p><img alt="Aerotek mission" class="alignleft" height="150" src="{{ asset('images/mission.jpg') }}" width="150">To provide superb customer service and to offer the highest Mechanical Ventilation options available.</p>
                                         <p>To keep up with advances in Mechanical Ventilation technology to continually expand our base of knowledge and expertise.</p>
                                         <p>To always remain aware of our responsibility to our environment and educate our customers and staff on eco-friendly options.</p>
                                     </div>
@@ -68,7 +73,7 @@
                                         <p><i class="ti ti-check"></i><span class="cmt-list-li-content pl-3">Listen to our customers and exceed their expectations with every opportunity.</span></p>
                                         <p><i class="ti ti-check"></i><span class="cmt-list-li-content pl-3">Listen to our people who do the work.</span></p>
                                         <p><i class="ti ti-check"></i><span class="cmt-list-li-content pl-3">Hold each member accountable for results, with a clear understanding that ethical standards must NEVER be compromised.</span></p>
-                                        <p><i class="ti ti-check"></i><span class="cmt-list-li-content pl-3">Have the attitude: “One for all and all for one”, encourage and support like family.</span></p>
+                                        <p><i class="ti ti-check"></i><span class="cmt-list-li-content pl-3">Have the attitude: "One for all and all for one", encourage and support like family.</span></p>
                                         <p><i class="ti ti-check"></i><span class="cmt-list-li-content pl-3">Always professional, courteous, understanding, eager, and enthusiastic.</span></p>
                                         </p>
                                     </div>
@@ -81,7 +86,7 @@
                     </div>
                     <div class="col-lg-5">
                         <div class="d-inline-block cmt_single_image-wrapper position-relative">
-                            <img alt="" class="img-fluid" height="574" src="{{ asset('images/about.png') }}" width="514">
+                            <img alt="Aerotek ventilation experts" class="img-fluid" height="574" src="{{ asset('images/about.png') }}" width="514">
                             <div class="d-flex mt_140 ml-90 res-991-m-0 res-991-mt-30 position-relative z-index-2">
                                 <div class="cmt-bgcolor-highlight pl-5"></div>
                                 <div class="d-inline w-100 pt-25 pb-15 cmt-bgcolor-white box-shadow pl-20 pr-20 text-left">
@@ -113,7 +118,7 @@
                         <div class="d-flex">
                             <div class="col">
                                 <div class="cmt_single_image-wrapper about-story-img">
-                                    <img alt="" class="img-fluid" height="610" src="{{ asset('images/about-2.jpg') }}" width="571">
+                                    <img alt="Aerotek story and facilities" class="img-fluid" height="610" src="{{ asset('images/about-2.jpg') }}" width="571">
                                 </div>
                             </div>
                         </div>

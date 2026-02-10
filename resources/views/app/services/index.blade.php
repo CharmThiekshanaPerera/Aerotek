@@ -4,6 +4,11 @@
     Services
 @endsection
 
+@section('seo_title', 'Ventilation and HVAC Services')
+@section('seo_description', 'Explore Aerotek Lanka ventilation, evaporative cooling, humidifier, dehumidifier, and air conditioning services for industrial, commercial, and domestic projects.')
+@section('seo_keywords', 'ventilation services, HVAC services, evaporative cooling, humidifier, dehumidifier, air conditioning Sri Lanka')
+@section('seo_image', asset('images/service-1.png'))
+
 @section('content')
     <div class="cmt-page-title-row cmt-bgimage-yes cmt-bg cmt-bgcolor-darkgrey">
         <div class="cmt-row-wrapper-bg-layer cmt-bg-layer"></div>
@@ -49,7 +54,7 @@
                                     <div class="row">
                                         <div class="col-lg-6 col-md-10">
                                             <div class="d-inline-block single-img-wraper cmt-bgcolor-white box-shadow p-3">
-                                                <img width="580" height="470" class="img-fluid" src="{{ asset('images/service-1.png') }}" alt="">
+                                                <img width="580" height="470" class="img-fluid" src="{{ asset('images/service-1.png') }}" alt="Mechanical ventilation systems service">
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-12">
@@ -97,7 +102,7 @@
                                                     </li>
                                                     <li>
                                                         <i class="ti ti-check cmt-textcolor-darkgrey"></i>
-                                                        <span class="font-weight-normal pl-3">Cyclones, Scrubbers – Venturing / Spray System.</span>
+                                                        <span class="font-weight-normal pl-3">Cyclones, Scrubbers - Venturing / Spray System.</span>
                                                     </li>
                                                     <li>
                                                         <i class="ti ti-check cmt-textcolor-darkgrey"></i>
@@ -116,7 +121,7 @@
                                     <div class="row">
                                         <div class="col-lg-6 col-md-10">
                                             <div class="d-inline-block single-img-wraper cmt-bgcolor-white box-shadow p-3">
-                                                <img width="580" height="470" class="img-fluid" src="{{ asset('images/service-2.png') }}" alt="">
+                                                <img width="580" height="470" class="img-fluid" src="{{ asset('images/service-2.png') }}" alt="Evaporative cooling systems service">
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-12">
@@ -139,7 +144,7 @@
                                     <div class="row">
                                         <div class="col-lg-6 col-md-10">
                                             <div class="d-inline-block single-img-wraper cmt-bgcolor-white box-shadow p-3">
-                                                <img width="580" height="470" class="img-fluid" src="{{ asset('images/service-3.png') }}" alt="">
+                                                <img width="580" height="470" class="img-fluid" src="{{ asset('images/service-3.png') }}" alt="Humidifier and dehumidifier systems service">
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-12">
@@ -162,7 +167,7 @@
                                     <div class="row">
                                         <div class="col-lg-6 col-md-10">
                                             <div class="d-inline-block single-img-wraper cmt-bgcolor-white box-shadow p-3">
-                                                <img width="580" height="470" class="img-fluid" src="{{ asset('images/air-conditioning-system.jpg') }}" alt="">
+                                                <img width="580" height="470" class="img-fluid" src="{{ asset('images/air-conditioning-system.jpg') }}" alt="Air conditioning systems service">
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-12">

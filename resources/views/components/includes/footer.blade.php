@@ -43,7 +43,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="copyright text-center">
-                        <span>&copy; {{ date('Y') }} <a class="cmt-textcolor-skincolor" href="{{ route('index') }}">{{ env('APP_NAME') }}</a>. All Rights Reserved. Designed By <a class="cmt-textcolor-skincolor" href="https://phyxle.com" target="_blank">Phyxle</a>.</span>
+                        <span>&copy; {{ date('Y') }} <a class="cmt-textcolor-skincolor" href="{{ route('index') }}">{{ env('APP_NAME') }}</a>. All Rights Reserved. Designed By <a class="cmt-textcolor-skincolor" href="https://phyxle.com" target="_blank" rel="noopener">Phyxle</a>.</span>
                     </div>
                 </div>
             </div>

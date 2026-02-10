@@ -4,6 +4,11 @@
     {{ $projectCategory->title }} | Projects
 @endsection
 
+@section('seo_title', $projectCategory->title . ' | Projects')
+@section('seo_description', 'View ' . $projectCategory->title . ' ventilation project gallery by Aerotek Lanka (Pvt) Ltd.')
+@section('seo_keywords', $projectCategory->title . ', ventilation projects, HVAC projects, Aerotek Lanka')
+@section('seo_image', asset('images/projects/' . $projectCategory->image))
+
 @section('content')
     <div class="cmt-page-title-row cmt-bgimage-yes cmt-bg cmt-bgcolor-darkgrey">
         <div class="cmt-row-wrapper-bg-layer cmt-bg-layer"></div>
@@ -37,7 +42,7 @@
                                             <div class="featured-imagebox featured-imagebox-portfolio style1">
                                                 <div class="cmt-box-view-overlay">
                                                     <div class="featured-thumbnail">
-                                                        <img width="600" height="750" class="img-fluid" src="{{ asset('images/projects/' . $project->image) }}" alt="">
+                                                        <img width="600" height="750" class="img-fluid" src="{{ asset('images/projects/' . $project->image) }}" alt="{{ $projectCategory->title }} project image">
                                                     </div>
                                                     <div class="cmt-media-link">
                                                         <a class="cmt_prettyphoto cmt_image" data-gal="prettyPhoto[gallery1]" href="{{ asset('images/projects/' . $project->image) }}" data-rel="prettyPhoto" tabindex="0">

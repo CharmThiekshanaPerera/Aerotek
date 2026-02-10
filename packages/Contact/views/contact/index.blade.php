@@ -4,6 +4,11 @@
     Contact Us
 @endsection
 
+@section('seo_title', 'Contact Aerotek Lanka')
+@section('seo_description', 'Contact Aerotek Lanka (Pvt) Ltd for ventilation, HVAC, evaporative cooling, and air conditioning projects. Request a quote or reach our offices in Sri Lanka.')
+@section('seo_keywords', 'contact Aerotek Lanka, ventilation quote, HVAC Sri Lanka, air conditioning services')
+@section('seo_image', asset('images/contact-us.jpg'))
+
 @section('content')
     <div class="cmt-page-title-row cmt-bgimage-yes cmt-bg cmt-bgcolor-darkgrey">
         <div class="cmt-row-wrapper-bg-layer cmt-bg-layer"></div>
@@ -76,7 +81,7 @@
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="featured-icon-box style6 border">
-                            <img src="{{ asset('images/contact-us.jpg') }}" class="img-fluid" alt="">
+                            <img src="{{ asset('images/contact-us.jpg') }}" class="img-fluid" alt="Aerotek Lanka contact and support">
                         </div>
                     </div>
                 </div>
@@ -87,7 +92,7 @@
                 <div class="row no-gutters">
                     <div class="col-lg-6">
                         <div class="cmt-bgcolor-grey cmt-bg cmt-left-span h-100">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.1896587594338!2d80.14097591477395!3d7.104005694869807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe8c01a95fbbb441e!2zN8KwMDYnMTQuNCJOIDgwwrAwOCczNS40IkU!5e0!3m2!1sen!2slk!4v1674120297527!5m2!1sen!2slk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe title="Aerotek Lanka design office map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.1896587594338!2d80.14097591477395!3d7.104005694869807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe8c01a95fbbb441e!2zN8KwMDYnMTQuNCJOIDgwwrAwOCczNS40IkU!5e0!3m2!1sen!2slk!4v1674120297527!5m2!1sen!2slk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                     <div class="col-lg-6">

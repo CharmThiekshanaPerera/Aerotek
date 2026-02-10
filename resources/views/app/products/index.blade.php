@@ -4,6 +4,11 @@
     Products
 @endsection
 
+@section('seo_title', 'Ventilation Products and Categories')
+@section('seo_description', 'Browse Aerotek Lanka ventilation product categories, including fans, evaporative cooling, humidifiers, dehumidifiers, and accessories.')
+@section('seo_keywords', 'ventilation products, ventilation fans, evaporative cooling, humidifiers, dehumidifiers, ventilation accessories')
+@section('seo_image', asset('images/products/product.jpg'))
+
 @section('content')
     <div class="cmt-page-title-row cmt-bgimage-yes cmt-bg cmt-bgcolor-darkgrey">
         <div class="cmt-row-wrapper-bg-layer cmt-bg-layer"></div>
@@ -31,7 +36,7 @@
                         <div class="cmt-box-col-wrapper col-lg-4">
                             <div class="featured-imagebox featured-imagebox-post style1">
                                 <div class="cmt-post-thumbnail featured-thumbnail">
-                                    <img width="770" height="530" class="img-fluid" src="{{ asset('images/products/' . $productCategory->image) }}" alt="">
+                                    <img width="770" height="530" class="img-fluid" src="{{ asset('images/products/' . $productCategory->image) }}" alt="{{ $productCategory->title }}">
                                 </div>
                                 <div class="featured-content">
                                     <div class="featured-title">

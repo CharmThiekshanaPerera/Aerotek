@@ -1,13 +1,73 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
+    @php
+        $baseTitle = trim($__env->yieldContent('title'));
+        $seoTitle = trim($__env->yieldContent('seo_title'));
+        $pageTitle = $seoTitle !== '' ? $seoTitle : $baseTitle;
+        $siteName = config('app.name');
+        $fullTitle = $pageTitle !== '' ? $pageTitle . ' | ' . $siteName : $siteName;
+        $seoDescription = trim($__env->yieldContent('seo_description'));
+        if ($seoDescription === '') {
+            $seoDescription = 'Aerotek Lanka (Pvt) Ltd provides mechanical ventilation, HVAC, evaporative cooling, and air conditioning solutions for industrial, commercial, and domestic projects in Sri Lanka.';
+        }
+        $seoKeywords = trim($__env->yieldContent('seo_keywords'));
+        if ($seoKeywords === '') {
+            $seoKeywords = 'mechanical ventilation, ventilation systems, HVAC Sri Lanka, evaporative cooling, air conditioning, industrial ventilation';
+        }
+        $seoImage = trim($__env->yieldContent('seo_image'));
+        if ($seoImage === '') {
+            $seoImage = asset('images/logo/logo.png');
+        }
+        $canonical = trim($__env->yieldContent('seo_canonical'));
+        if ($canonical === '') {
+            $canonical = url()->current();
+        }
+        $ogType = trim($__env->yieldContent('seo_og_type'));
+        if ($ogType === '') {
+            $ogType = 'website';
+        }
+        $organizationSchema = [
+            '@context' => 'https://schema.org',
+            '@type' => 'Organization',
+            'name' => $siteName,
+            'url' => config('app.url'),
+            'logo' => asset('images/logo/logo.png'),
+            'contactPoint' => [
+                [
+                    '@type' => 'ContactPoint',
+                    'telephone' => env('APP_PHONE_1'),
+                    'contactType' => 'customer service',
+                    'email' => env('APP_EMAIL'),
+                ],
+            ],
+            'address' => [
+                '@type' => 'PostalAddress',
+                'streetAddress' => env('APP_ADDRESS_1'),
+                'addressCountry' => 'Sri Lanka',
+            ],
+        ];
+    @endphp
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="{{ $seoDescription }}">
+    <meta name="keywords" content="{{ $seoKeywords }}">
     <meta name="author" content="Phyxle Infotech (Pvt) Ltd">
-    <title>@yield('title') | {{ env('APP_NAME') }}</title>
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <title>{{ $fullTitle }}</title>
+    <link rel="canonical" href="{{ $canonical }}">
+    <meta property="og:type" content="{{ $ogType }}">
+    <meta property="og:site_name" content="{{ $siteName }}">
+    <meta property="og:title" content="{{ $pageTitle !== '' ? $pageTitle : $siteName }}">
+    <meta property="og:description" content="{{ $seoDescription }}">
+    <meta property="og:url" content="{{ $canonical }}">
+    <meta property="og:image" content="{{ $seoImage }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ $pageTitle !== '' ? $pageTitle : $siteName }}">
+    <meta name="twitter:description" content="{{ $seoDescription }}">
+    <meta name="twitter:image" content="{{ $seoImage }}">
+    <script type="application/ld+json">{{ json_encode($organizationSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) }}</script>
     <link rel="icon" href="{{ asset('images/favicon.png') }}" type="image/png">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
@@ -21,6 +81,7 @@
     <link rel="stylesheet" href="{{ asset('css/mega-menu.css') }}">
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
     <link rel="stylesheet" href="{{ asset('css/revolution.css') }}" id="rs-plugin-settings-css">
+    @yield('head')
 </head>
 
 <body>

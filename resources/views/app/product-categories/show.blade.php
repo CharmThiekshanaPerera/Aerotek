@@ -4,6 +4,11 @@
     {{ $productCategory->title }} | Products
 @endsection
 
+@section('seo_title', $productCategory->title . ' | Products')
+@section('seo_description', \Illuminate\Support\Str::limit(strip_tags($productCategory->content ?? ''), 155))
+@section('seo_keywords', $productCategory->title . ', ventilation products, Aerotek Lanka')
+@section('seo_image', asset('images/products/' . $productCategory->image))
+
 @section('content')
     <div class="cmt-page-title-row cmt-bgimage-yes cmt-bg cmt-bgcolor-darkgrey">
         <div class="cmt-row-wrapper-bg-layer cmt-bg-layer"></div>
@@ -48,7 +53,7 @@
                         <div class="cmt-box-col-wrapper col-lg-4">
                             <div class="featured-imagebox featured-imagebox-post style1">
                                 <div class="cmt-post-thumbnail featured-thumbnail">
-                                    <img width="770" height="530" class="img-fluid" src="{{ asset('images/products/' . $product->image) }}" alt="">
+                                    <img width="770" height="530" class="img-fluid" src="{{ asset('images/products/' . $product->image) }}" alt="{{ $product->title }}">
                                 </div>
                                 <div class="featured-content">
                                     <div class="featured-title">

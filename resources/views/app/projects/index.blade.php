@@ -4,6 +4,11 @@
     Projects
 @endsection
 
+@section('seo_title', 'Ventilation Projects')
+@section('seo_description', 'Explore Aerotek Lanka ventilation and HVAC projects across industrial, commercial, and domestic facilities in Sri Lanka.')
+@section('seo_keywords', 'ventilation projects, HVAC projects, industrial ventilation, commercial ventilation, Sri Lanka')
+@section('seo_image', asset('images/project-1.jpg'))
+
 @section('content')
     <div class="cmt-page-title-row cmt-bgimage-yes cmt-bg cmt-bgcolor-darkgrey">
         <div class="cmt-row-wrapper-bg-layer cmt-bg-layer"></div>
@@ -32,7 +37,7 @@
                             <article class="post cmt-blog-classic clearfix">
                                 <div class="cmt-post-featured-wrapper cmt-featured-wrapper">
                                     <div class="cmt-post-featured">
-                                        <img width="1200" height="800" class="img-fluid"src="{{ asset('images/projects/' . $projectCategory->image) }}" alt="">
+                                        <img width="1200" height="800" class="img-fluid"src="{{ asset('images/projects/' . $projectCategory->image) }}" alt="{{ $projectCategory->title }} project category">
                                     </div>
                                 </div>
                                 <div class="cmt-blog-classic-content">
@@ -66,7 +71,7 @@
                                 @forelse ($projectCategories as $projectCategory)
                                     <li>
                                         <a href="{{ route('project-categories.show', $projectCategory) }}">
-                                            <img width="500" height="597" class="img-fluid" src="{{ asset('images/projects/' . $projectCategory->image) }}" alt="">
+                                            <img width="500" height="597" class="img-fluid" src="{{ asset('images/projects/' . $projectCategory->image) }}" alt="{{ $projectCategory->title }} project category">
                                         </a>
                                         <div class="post-detail">
                                             <a href="{{ route('project-categories.show', $projectCategory) }}">{{ $projectCategory->title }}</a>

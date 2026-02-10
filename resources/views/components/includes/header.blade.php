@@ -17,8 +17,8 @@
                     </div>
                     <div class="top_bar_contact_item top_bar_social ml-auto p-0">
                         <ul class="social-icons d-flex">
-                            <li><a href="https://www.facebook.com/aeroteklk" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/manoj-ranasinghe-267a51220" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://www.facebook.com/aeroteklk" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/manoj-ranasinghe-267a51220" target="_blank" rel="noopener"><i class="fa fa-linkedin"></i></a></li>
                         </ul>
                     </div>
                     <div class="top_bar_contact_item header_search">
@@ -45,7 +45,7 @@
                         <div class="site-navigation d-flex cmt-bgcolor-darkgrey flex-row">
                             <div class="site-branding pl-15 res-1199-pl-0 mr-auto">
                                 <a class="home-link" href="{{ route('index') }}" title="{{ env('APP_NAME') }}">
-                                    <img alt="" class="img-center" id="logo-img" src="{{ asset('images/logo/logo.png') }}">
+                                    <img alt="Aerotek Lanka logo" class="img-center" id="logo-img" src="{{ asset('images/logo/logo.png') }}">
                                 </a>
                             </div>
                             <div class="btn-show-menu-mobile menubar menubar--squeeze">
