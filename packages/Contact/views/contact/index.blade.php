@@ -8,6 +8,29 @@
 @section('seo_description', 'Contact Aerotek Lanka (Pvt) Ltd for ventilation, HVAC, evaporative cooling, and air conditioning projects. Request a quote or reach our offices in Sri Lanka.')
 @section('seo_keywords', 'contact Aerotek Lanka, ventilation quote, HVAC Sri Lanka, air conditioning services')
 @section('seo_image', asset('images/contact-us.jpg'))
+@section('seo_schema')
+    @php
+        $breadcrumbSchema = [
+            '@context' => 'https://schema.org',
+            '@type' => 'BreadcrumbList',
+            'itemListElement' => [
+                [
+                    '@type' => 'ListItem',
+                    'position' => 1,
+                    'name' => 'Home',
+                    'item' => url('/'),
+                ],
+                [
+                    '@type' => 'ListItem',
+                    'position' => 2,
+                    'name' => 'Contact Us',
+                    'item' => route('contact.index'),
+                ],
+            ],
+        ];
+    @endphp
+    <script type="application/ld+json">{{ json_encode($breadcrumbSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) }}</script>
+@endsection
 
 @section('content')
     <div class="cmt-page-title-row cmt-bgimage-yes cmt-bg cmt-bgcolor-darkgrey">

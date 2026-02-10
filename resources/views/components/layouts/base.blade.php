@@ -48,6 +48,24 @@
                 'addressCountry' => 'Sri Lanka',
             ],
         ];
+        $localBusinessSchema = [
+            '@context' => 'https://schema.org',
+            '@type' => 'LocalBusiness',
+            'name' => $siteName,
+            'url' => config('app.url'),
+            'image' => asset('images/logo/logo.png'),
+            'telephone' => env('APP_PHONE_1'),
+            'email' => env('APP_EMAIL'),
+            'address' => [
+                '@type' => 'PostalAddress',
+                'streetAddress' => env('APP_ADDRESS_1'),
+                'addressCountry' => 'Sri Lanka',
+            ],
+            'sameAs' => [
+                'https://www.facebook.com/aeroteklk',
+                'https://www.linkedin.com/in/manoj-ranasinghe-267a51220',
+            ],
+        ];
     @endphp
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -68,6 +86,8 @@
     <meta name="twitter:description" content="{{ $seoDescription }}">
     <meta name="twitter:image" content="{{ $seoImage }}">
     <script type="application/ld+json">{{ json_encode($organizationSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) }}</script>
+    <script type="application/ld+json">{{ json_encode($localBusinessSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) }}</script>
+    @yield('seo_schema')
     <link rel="icon" href="{{ asset('images/favicon.png') }}" type="image/png">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('css/animate.css') }}">

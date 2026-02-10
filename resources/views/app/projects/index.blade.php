@@ -8,6 +8,29 @@
 @section('seo_description', 'Explore Aerotek Lanka ventilation and HVAC projects across industrial, commercial, and domestic facilities in Sri Lanka.')
 @section('seo_keywords', 'ventilation projects, HVAC projects, industrial ventilation, commercial ventilation, Sri Lanka')
 @section('seo_image', asset('images/project-1.jpg'))
+@section('seo_schema')
+    @php
+        $breadcrumbSchema = [
+            '@context' => 'https://schema.org',
+            '@type' => 'BreadcrumbList',
+            'itemListElement' => [
+                [
+                    '@type' => 'ListItem',
+                    'position' => 1,
+                    'name' => 'Home',
+                    'item' => url('/'),
+                ],
+                [
+                    '@type' => 'ListItem',
+                    'position' => 2,
+                    'name' => 'Projects',
+                    'item' => route('projects.index'),
+                ],
+            ],
+        ];
+    @endphp
+    <script type="application/ld+json">{{ json_encode($breadcrumbSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) }}</script>
+@endsection
 
 @section('content')
     <div class="cmt-page-title-row cmt-bgimage-yes cmt-bg cmt-bgcolor-darkgrey">

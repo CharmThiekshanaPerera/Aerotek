@@ -8,6 +8,35 @@
 @section('seo_description', \Illuminate\Support\Str::limit(strip_tags($productCategory->content ?? ''), 155))
 @section('seo_keywords', $productCategory->title . ', ventilation products, Aerotek Lanka')
 @section('seo_image', asset('images/products/' . $productCategory->image))
+@section('seo_schema')
+    @php
+        $breadcrumbSchema = [
+            '@context' => 'https://schema.org',
+            '@type' => 'BreadcrumbList',
+            'itemListElement' => [
+                [
+                    '@type' => 'ListItem',
+                    'position' => 1,
+                    'name' => 'Home',
+                    'item' => url('/'),
+                ],
+                [
+                    '@type' => 'ListItem',
+                    'position' => 2,
+                    'name' => 'Products',
+                    'item' => route('products.index'),
+                ],
+                [
+                    '@type' => 'ListItem',
+                    'position' => 3,
+                    'name' => $productCategory->title,
+                    'item' => route('product-categories.show', $productCategory),
+                ],
+            ],
+        ];
+    @endphp
+    <script type="application/ld+json">{{ json_encode($breadcrumbSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) }}</script>
+@endsection
 
 @section('content')
     <div class="cmt-page-title-row cmt-bgimage-yes cmt-bg cmt-bgcolor-darkgrey">

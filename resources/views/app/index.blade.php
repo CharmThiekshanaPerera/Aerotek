@@ -8,6 +8,17 @@
 @section('seo_description', 'Aerotek Lanka (Pvt) Ltd provides mechanical ventilation, HVAC, evaporative cooling, and air conditioning solutions for industrial, commercial, and domestic projects in Sri Lanka.')
 @section('seo_keywords', 'mechanical ventilation, ventilation systems, HVAC Sri Lanka, evaporative cooling, air conditioning, industrial ventilation')
 @section('seo_image', asset('images/slide-1.jpg'))
+@section('seo_schema')
+    @php
+        $websiteSchema = [
+            '@context' => 'https://schema.org',
+            '@type' => 'WebSite',
+            'name' => config('app.name'),
+            'url' => config('app.url'),
+        ];
+    @endphp
+    <script type="application/ld+json">{{ json_encode($websiteSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) }}</script>
+@endsection
 
 @section('content')
     <rs-module-wrap data-source="gallery" id="rev_slider_2_1_wrapper" style="background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">

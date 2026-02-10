@@ -8,6 +8,29 @@
 @section('seo_description', 'Explore Aerotek Lanka ventilation, evaporative cooling, humidifier, dehumidifier, and air conditioning services for industrial, commercial, and domestic projects.')
 @section('seo_keywords', 'ventilation services, HVAC services, evaporative cooling, humidifier, dehumidifier, air conditioning Sri Lanka')
 @section('seo_image', asset('images/service-1.png'))
+@section('seo_schema')
+    @php
+        $breadcrumbSchema = [
+            '@context' => 'https://schema.org',
+            '@type' => 'BreadcrumbList',
+            'itemListElement' => [
+                [
+                    '@type' => 'ListItem',
+                    'position' => 1,
+                    'name' => 'Home',
+                    'item' => url('/'),
+                ],
+                [
+                    '@type' => 'ListItem',
+                    'position' => 2,
+                    'name' => 'Services',
+                    'item' => route('services.index'),
+                ],
+            ],
+        ];
+    @endphp
+    <script type="application/ld+json">{{ json_encode($breadcrumbSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) }}</script>
+@endsection
 
 @section('content')
     <div class="cmt-page-title-row cmt-bgimage-yes cmt-bg cmt-bgcolor-darkgrey">

@@ -10,13 +10,14 @@ class SitemapController extends Controller
 {
     public function index(): Response
     {
+        $today = now()->toDateString();
         $urls = [
-            ['loc' => url('/'), 'lastmod' => now()->toDateString(), 'priority' => '1.0'],
-            ['loc' => route('about.index'), 'lastmod' => now()->toDateString(), 'priority' => '0.8'],
-            ['loc' => route('services.index'), 'lastmod' => now()->toDateString(), 'priority' => '0.8'],
-            ['loc' => route('projects.index'), 'lastmod' => now()->toDateString(), 'priority' => '0.8'],
-            ['loc' => route('products.index'), 'lastmod' => now()->toDateString(), 'priority' => '0.8'],
-            ['loc' => route('contact.index'), 'lastmod' => now()->toDateString(), 'priority' => '0.7'],
+            ['loc' => url('/'), 'lastmod' => $today, 'priority' => '1.0', 'changefreq' => 'weekly'],
+            ['loc' => route('about.index'), 'lastmod' => $today, 'priority' => '0.8', 'changefreq' => 'monthly'],
+            ['loc' => route('services.index'), 'lastmod' => $today, 'priority' => '0.8', 'changefreq' => 'monthly'],
+            ['loc' => route('projects.index'), 'lastmod' => $today, 'priority' => '0.8', 'changefreq' => 'weekly'],
+            ['loc' => route('products.index'), 'lastmod' => $today, 'priority' => '0.8', 'changefreq' => 'weekly'],
+            ['loc' => route('contact.index'), 'lastmod' => $today, 'priority' => '0.7', 'changefreq' => 'monthly'],
         ];
 
         $productCategories = ProductCategory::query()->select(['slug', 'updated_at'])->get();
@@ -25,6 +26,7 @@ class SitemapController extends Controller
                 'loc' => route('product-categories.show', ['product_category' => $category->slug]),
                 'lastmod' => optional($category->updated_at)->toDateString(),
                 'priority' => '0.6',
+                'changefreq' => 'monthly',
             ];
         }
 
@@ -34,6 +36,7 @@ class SitemapController extends Controller
                 'loc' => route('project-categories.show', ['project_category' => $category->slug]),
                 'lastmod' => optional($category->updated_at)->toDateString(),
                 'priority' => '0.6',
+                'changefreq' => 'monthly',
             ];
         }
 
@@ -58,6 +61,9 @@ class SitemapController extends Controller
             }
             if (!empty($url['priority'])) {
                 $lines[] = '    <priority>' . $url['priority'] . '</priority>';
+            }
+            if (!empty($url['changefreq'])) {
+                $lines[] = '    <changefreq>' . $url['changefreq'] . '</changefreq>';
             }
             $lines[] = '  </url>';
         }

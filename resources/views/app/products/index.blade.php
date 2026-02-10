@@ -8,6 +8,29 @@
 @section('seo_description', 'Browse Aerotek Lanka ventilation product categories, including fans, evaporative cooling, humidifiers, dehumidifiers, and accessories.')
 @section('seo_keywords', 'ventilation products, ventilation fans, evaporative cooling, humidifiers, dehumidifiers, ventilation accessories')
 @section('seo_image', asset('images/products/product.jpg'))
+@section('seo_schema')
+    @php
+        $breadcrumbSchema = [
+            '@context' => 'https://schema.org',
+            '@type' => 'BreadcrumbList',
+            'itemListElement' => [
+                [
+                    '@type' => 'ListItem',
+                    'position' => 1,
+                    'name' => 'Home',
+                    'item' => url('/'),
+                ],
+                [
+                    '@type' => 'ListItem',
+                    'position' => 2,
+                    'name' => 'Products',
+                    'item' => route('products.index'),
+                ],
+            ],
+        ];
+    @endphp
+    <script type="application/ld+json">{{ json_encode($breadcrumbSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) }}</script>
+@endsection
 
 @section('content')
     <div class="cmt-page-title-row cmt-bgimage-yes cmt-bg cmt-bgcolor-darkgrey">
